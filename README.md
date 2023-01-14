@@ -57,17 +57,14 @@
 
 ## About The Project
 
-This repo is a sandbox project for developers. It's a startup of a ReactJs and Django project using docker. This is an example of a forum software, using ReactJs like frontend and Django (Rest-framework) for backend. It no has a MySQL or SQL BD, using sqlite for default. In other repo, I have a project with ReactJs, Django and MySQL.
+This repo is a sandbox project for students. It's a example Django project for a course taught as a teacher in the second semester of 2019. It no has a MySQL or SQL BD, using sqlite for default. In other repo, I have a project with ReactJs, Django and MySQL.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-- [![React][react.js]][react-url]
 - [![Django][django]][django-url]
-- [![Docker][docker]][docker-url]
 - [![Bootstrap][bootstrap]][bootstrap-url]
-- [![Javascript][javascript]][javascript-url]
 - [![Python][python]][python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
