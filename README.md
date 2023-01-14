@@ -79,24 +79,35 @@ To get a local copy up and running follow these simple example steps.
 
 To run the repository, you must have the following installed on your computer
 
-- Git
-- Docker
-- Docker Compose
+- Python3
+- Pip
+- Virtualenv (in Pip)
 
 ### Installation
 
-1. Clone the repo
+This steps is for a Linux OS system.
+
+1. Create virtualenv
+   ```sh
+   python3 -m virtualenv venv
+   ```
+2. Activate virtualenv
+   ```sh
+   source venv/bin/activate
+   ```
+3. Clone the repo
    ```sh
    git clone https://github.com/Jor-Diaz/DemoDjangoCourse.git
    ```
-2. Execute build with Docker Compose
+4. Install requirements in virtualenv
    ```sh
-   docker-compose build
+   (venv) pip3 install -r DemoDjangoCourse/requirements.txt
    ```
-3. Start Docker
+5. Start Project
    ```sh
-   docker-compose up
+   (venv) python3 DemoDjangoCourse/manage.py runserver
    ```
+6. Go to localhost:8000 and enjoy! :D
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,20 +160,12 @@ Linkedin: [https://cl.linkedin.com/in/jdiazmatte](https://cl.linkedin.com/in/jdi
 [issues-shield]: https://img.shields.io/github/issues/Jor-Diaz/DemoDjangoCourse.svg?style=for-the-badge
 [issues-url]: https://github.com/Jor-Diaz/DemoDjangoCourse/issues
 [license-shield]: https://img.shields.io/github/license/Jor-Diaz/DemoDjangoCourse.svg?style=for-the-badge
-[license-url]: https://github.com/Jor-Diaz/DemoDjangoCourse/master/LICENSE.txt
+[license-url]: https://github.com/Jor-Diaz/DemoDjangoCourse/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://cl.linkedin.com/in/jdiazmatte
-[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[react-url]: https://reactjs.org/
 [bootstrap]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [bootstrap-url]: https://getbootstrap.com
 [django-url]: https://www.djangoproject.com/
 [django]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white
 [python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://www.python.org/
-[docker-url]: https://www.docker.com/
-[docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
-[javascript]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
-[javascript-url]: https://www.javascript.com/
-[html5]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-[css3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
